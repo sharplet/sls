@@ -1,0 +1,16 @@
+sls: Reimplementing `ls` in Swift!
+
+Design goals:
+
+- Implemented using only Swift and (portable) system calls
+- Not allowed to `import Foundation`!
+
+MVP features:
+
+- Print current directory (single entry per line)
+- Print directory passed on the command line
+- Print regular files as well as directories
+
+-- 
+Prev: slides/no_ide.txt
+Next: slides/remember.txt

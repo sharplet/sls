@@ -1,0 +1,9 @@
+Rationale
+
+- Swift in Xcode was kinda terrible
+- Scripting!
+- Familiarity
+
+-- 
+Prev: README
+Next: slides/no_ide.txt

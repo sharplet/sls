@@ -1,0 +1,9 @@
+Coding without an IDE
+
+- Text editors (are really good at editing text!)
+- Scripting!
+- Build tools (Make, Rake, etc.)
+
+-- 
+Prev: slides/rationale.txt
+Next: slides/sls.txt
