@@ -1,12 +1,7 @@
 import Darwin
 
 if let ptr = opendir(".") {
-  while true {
-    let entry_ptr = readdir(ptr)
-    if entry_ptr == nil { break }
-
-    let entry = entry_ptr.memory
-
+  while let entry = readdir(ptr) {
     let raw_name = entry.d_name
 
     var chars = [CChar]()

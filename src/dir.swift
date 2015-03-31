@@ -7,3 +7,9 @@ func opendir(name: String) -> DirPtr? {
 
   return (ptr == nil ? nil : ptr)
 }
+
+func readdir(dir: DirPtr) -> dirent? {
+  let entry = Darwin.readdir(dir)
+
+  return (entry == nil ? nil : entry.memory)
+}
