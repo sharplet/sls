@@ -2,8 +2,7 @@ import Darwin
 
 let ptr = opendir(".")
 if ptr == nil {
-  fputs("fatal: error opening directory '.'", stderr)
-  exit(1)
+  fail("fatal: error opening directory '.'")
 }
 
 while true {
