@@ -1,5 +1,8 @@
-if let dir = Dir(".") {
+let args = dropFirst(Process.arguments)
+let name = args.first ?? "."
+
+if let dir = Dir(name) {
   println(dir)
 } else {
-  fail("fatal: error opening directory '.'")
+  fail("sls: \(name): No such directory")
 }
